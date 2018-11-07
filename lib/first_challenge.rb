@@ -20,7 +20,7 @@ contacts.each do |key,value|
       if key == "favorite_icecream_flavors"
         value.each do |arr_value|
           if arr_value == "strawberry"
-            delete "strawberry"
+            delete("strawberry")
           end
         end
       end
