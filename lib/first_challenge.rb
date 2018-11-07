@@ -14,14 +14,14 @@ def first_challenge
   }
 i=-1
   #your code here
-contacts.each do |key,value|
-  if key == "Freddy Mercury"
-    value.each do |key, value|
-      if key == "favorite_icecream_flavors"
-        value.each do |arr_value|
+contacts.each do |name,data|
+  if name == "Freddy Mercury"
+    data.each do |more_data, more_value|
+      if more_data == "favorite_icecream_flavors"
+        more_value.each do |arr_value|
           i+=1
           if arr_value == "strawberry"
-            value.delete_at(i)
+            more_data.delete_at(i)
           end
         end
       end
