@@ -14,8 +14,8 @@ def first_challenge
   }
   #your code here
 contacts.each do |name,data|
-  puts "HELLO"
   if name == "Freddy Mercury"
+    puts "HELLO"
     data.each do |more_data, more_value|
       if more_data == "favorite_icecream_flavors"
         more_value.each do |arr_value|
