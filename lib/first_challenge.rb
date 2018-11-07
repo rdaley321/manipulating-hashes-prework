@@ -21,7 +21,7 @@ contacts.each do |key,value|
         value.each do |arr_value|
           i+=1
           if arr_value == "strawberry"
-            value.delete("strawberry")
+            value.delete_at(i)
           end
         end
       end
