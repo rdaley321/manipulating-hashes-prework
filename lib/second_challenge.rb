@@ -7,7 +7,5 @@ def second_challenge
   }
 
   #code your solution here!
-print groceries.values.flatten
-  
-
+groceries.values.flatten
 end
