@@ -19,7 +19,7 @@ contacts.each do |name,data|
       if more_data == :favorite_icecream_flavors
         more_value.each do |arr_value|
           if arr_value == "strawberry"
-            delete
+            more_value.delete("strawberry")
           end
         end
       end
