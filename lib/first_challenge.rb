@@ -17,10 +17,7 @@ contacts.each do |name,data|
   if name == "Freddy Mercury"
     data.each do |more_data, more_value|
       if more_data == :favorite_icecream_flavors
-        more_value.each do |arr_value|
-          if arr_value == "strawberry"
-            more_value.delete("strawberry")
-          end
+        more_value.delete_if(|value| value == "strawberry")
         end
       end
     end
