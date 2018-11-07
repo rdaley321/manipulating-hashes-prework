@@ -11,5 +11,3 @@ print groceries.values.flatten
   
 
 end
-
-second_challenge
