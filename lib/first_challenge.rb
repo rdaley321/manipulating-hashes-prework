@@ -15,9 +15,9 @@ def first_challenge
   #your code here
 contacts.each do |name,data|
   if name == "Freddy Mercury"
-    puts "HELLO"
     data.each do |more_data, more_value|
       if more_data == "favorite_icecream_flavors"
+        puts "HELLO"
         more_value.each do |arr_value|
           puts arr_value
           if arr_value == "strawberry"
