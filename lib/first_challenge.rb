@@ -12,13 +12,14 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
-
+i=-1
   #your code here
 contacts.each do |key,value|
   if key == "Freddy Mercury"
     value.each do |key, value|
       if key == "favorite_icecream_flavors"
         value.each do |arr_value|
+          i+=1
           if arr_value == "strawberry"
             value.delete("strawberry")
           end
