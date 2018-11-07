@@ -19,6 +19,7 @@ contacts.each do |name,data|
       if more_data == "favorite_icecream_flavors"
         more_value.each do |arr_value|
           puts arr_value
+          puts "HELLO"
           if arr_value == "strawberry"
             more_data.delete("strawberry")
           end
@@ -26,6 +27,7 @@ contacts.each do |name,data|
       end
     end
   end
+end
 
   #remember to return your newly altered contacts hash!
   contacts
